@@ -152,6 +152,7 @@ body{
 }
 
 .card{
+    min-height: 60px;
     width: 190px;
     display: flex;
     align-items: center;
@@ -166,12 +167,16 @@ body{
 
 .card img{
     width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: contain;
 }
 
 .card-price{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: auto;
     width: 100%;
     
 }
@@ -189,7 +194,21 @@ body{
     color: var(--accent-color);
     background-color: #092;
     padding: 7px 15px;
+    margin-top: 15px;
     border-radius: 5px;
+}
+
+.card-title{
+    min-height: 50px;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    
+}
+
+.descricao-produto{
+    font-size: 12px;
+    margin: 8px 0;
 }
 
 .sidebar{
